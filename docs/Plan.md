@@ -3,7 +3,7 @@ This turns the syllabus into a highly actionable tracking document. You can easi
 
 | Done | Goal | Links | Time (hrs) | Difficulty Level | Area of Focus |
 | :---: | :--- | :--- | :--- | :--- | :--- |
-| colspan="6" | **Phase 1: The Deep Roots** |
+|  | **Phase 1: The Deep Roots** |
 | [ ] | **Day 1:** Scalar Autograd (Understand `Value` & backprop) | [Micrograd Video](https://www.youtube.com/watch?v=VMj-3S1tku0) | 6 | Hard | Foundations / Math |
 | [ ] | **Day 2:** The Chain Rule in Code (Implement `_backward()`) | [Micrograd Source](https://github.com/karpathy/micrograd/blob/master/micrograd/engine.py) | 6 | Hard | Foundations / Math |
 | [ ] | **Day 3:** Building an MLP (Neuron to Multi-Layer Perceptron) | [Micrograd Source: nn.py](https://github.com/karpathy/micrograd/blob/master/micrograd/nn.py) | 8 | Hard | Architecture |
@@ -18,7 +18,7 @@ This turns the syllabus into a highly actionable tracking document. You can easi
 | [ ] | **Day 12:** Vector Databases (Install & index via Docker) | [Qdrant](https://qdrant.tech/) | 6 | Medium | Data Systems |
 | [ ] | **Day 13:** Chunking Strategies (Fixed vs. Recursive vs. Semantic)| [LangChain Text Splitters](https://python.langchain.com/docs/modules/data_connection/document_transformers/) | 4 | Easy | Data Engineering |
 | [ ] | **Day 14:** Metadata Filtering (HNSW indexing with payloads) | N/A | 5 | Medium | Data Systems |
-| colspan="6" | **Phase 2: Building & Systems** |
+| | **Phase 2: Building & Systems** |
 | [ ] | **Day 15:** BM25 vs. Vector (Keyword vs. Semantic search) | [Practical BM25](https://www.elastic.co/blog/practical-bm25-part-2-the-bm25-algorithm-and-its-variables) | 4 | Medium | Information Retrieval |
 | [ ] | **Day 16:** Hybrid Search & RRF (Reciprocal Rank Fusion) | N/A | 6 | Hard | Information Retrieval |
 | [ ] | **Day 17:** Cross-Encoders (Re-ranking top 100 results) | [SBERT: Retrieve & Re-Rank](https://www.sbert.net/examples/applications/retrieve_rerank/README.html) | 6 | Hard | Information Retrieval |
@@ -40,7 +40,7 @@ This turns the syllabus into a highly actionable tracking document. You can easi
 | [ ] | **Day 33:** Inter-Agent Communication (Messaging protocols) | N/A | 6 | Hard | Architecture |
 | [ ] | **Day 34:** Cost Monitoring (Token usage logging per step) | N/A | 4 | Easy | DevOps |
 | [ ] | **Day 35:** System Security (Prompt injection mitigation) | N/A | 4 | Medium | Security |
-| colspan="6" | **Phase 3: The Production Capstone** |
+| | **Phase 3: The Production Capstone** |
 | [ ] | **Day 36:** Wiki Dump Pipeline (XML to structured JSON) | [Wikimedia Dumps](https://dumps.wikimedia.org/enwiki/) | 8 | Medium | Data Engineering |
 | [ ] | **Day 37:** OpenSearch Serverless (Hybrid index on AWS) | N/A | 6 | Hard | Cloud / IR |
 | [ ] | **Day 38:** Multi-Hop Retrieval (Iterative agent research loops)| N/A | 8 | Very Hard | Architecture |
