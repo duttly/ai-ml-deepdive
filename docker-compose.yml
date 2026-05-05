@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  gateway-api:
+    build: 
+      context: .
+      dockerfile: 03_capstone_wiki_engine/Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - QDRANT_HOST=qdrant
+      - REDIS_HOST=redis
+      - AWS_PROFILE=default # Assumes your local ~/.aws/credentials are mounted or configured
+    depends_on:
+      - qdrant
+      - redis
+    volumes:
+      - ./03_capstone_wiki_engine:/app/03_capstone_wiki_engine
+
+  qdrant:
+    image: qdrant/qdrant:latest
+    ports:
+      - "6333:6333"
+    volumes:
+      - qdrant_data:/qdrant/storage
+
+  redis:
+    image: redis:alpine
+    ports:
+      - "6379:6379"
+
+volumes:
+  qdrant_data:

@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-capstone"
+version = "0.1.0"
+description = "Autonomous Wikipedia Research Engine & ML Foundations"
+requires-python = ">=3.11"
+dependencies = [
+    # Phase 1: Math & Hardware
+    "numpy",
+    "pandas",
+    "matplotlib",
+    "jupyterlab",
+    "torch>=2.2.0",
+    
+    # Phase 2: IR & Orchestration
+    "langchain",
+    "langgraph",
+    "pydantic",
+    "instructor",
+    "sentence-transformers",
+    "qdrant-client",
+    
+    # Phase 3: Capstone Serving & AWS
+    "fastapi",
+    "uvicorn",
+    "boto3",
+    "opensearch-py"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "black",
+    "ruff"
+]

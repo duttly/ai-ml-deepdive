@@ -1,0 +1,24 @@
+# Python & Environments
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Machine Learning / Data
+*.pt
+*.pth
+*.safetensors
+*.onnx
+*.gguf
+/03_capstone_wiki_engine/data_pipeline/*.xml
+/03_capstone_wiki_engine/data_pipeline/*.json
+
+# Logs & Databases
+*.log
+*.sqlite3
+/docker_data/
