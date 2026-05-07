@@ -1,0 +1,24 @@
+Metadata-Version: 2.4
+Name: ai-capstone
+Version: 0.1.0
+Summary: Autonomous Wikipedia Research Engine & ML Foundations
+Requires-Python: >=3.11
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: jupyterlab
+Requires-Dist: torch>=2.2.0
+Requires-Dist: langchain
+Requires-Dist: langgraph
+Requires-Dist: pydantic
+Requires-Dist: instructor
+Requires-Dist: sentence-transformers
+Requires-Dist: qdrant-client
+Requires-Dist: fastapi
+Requires-Dist: uvicorn
+Requires-Dist: boto3
+Requires-Dist: opensearch-py
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: black; extra == "dev"
+Requires-Dist: ruff; extra == "dev"

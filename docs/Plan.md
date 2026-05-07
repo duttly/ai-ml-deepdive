@@ -4,7 +4,7 @@ This turns the syllabus into a highly actionable tracking document. You can easi
 | Done | Goal | Links | Time (hrs) | Difficulty Level | Area of Focus |
 | :---: | :--- | :--- | :--- | :--- | :--- |
 |  | **Phase 1: The Deep Roots** |
-| [x] | **Day 1:** Learn Scalar Autograd (Understand `Value` & backprop) | [Micrograd Video](https://www.youtube.com/watch?v=VMj-3S1tku0) | 6 | Hard | Foundations / Math |
+| [x] | **Day 1:** Learn11 Scalar Autograd (Understand `Value` & backprop) | [Micrograd Video](https://www.youtube.com/watch?v=VMj-3S1tku0) | 6 | Hard | Foundations / Math |
 | [x] | **Day 2:** The Chain Rule in Code (Implement `_backward()`) | [Micrograd Source](https://github.com/karpathy/micrograd/blob/master/micrograd/engine.py) | 6 | Hard | Foundations / Math |
 | [ ] | **Day 3:** Building an MLP (Neuron to Multi-Layer Perceptron) | [Micrograd Source: nn.py](https://github.com/karpathy/micrograd/blob/master/micrograd/nn.py) | 8 | Hard | Architecture |
 | [ ] | **Day 4:** Self-Attention Mechanics (Matrix math of Q, K, V) | [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/) | 6 | Very Hard | Architecture |

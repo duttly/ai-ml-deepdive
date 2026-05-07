@@ -10,33 +10,52 @@ on:
 
 jobs:
   send_email:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest    
     steps:
-      - name: Send Email via SendGrid API
+      # 1. Checkout the code with history
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2 # CRITICAL: We need at least 2 commits to generate a diff!
+
+      # 2. Get the diff, safely format it, and send the email
+      - name: Get Diff and Send Email via SendGrid API
         env:
           SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
         run: |
+          # Grab the diff for this specific file
+          RAW_DIFF=$(git diff -U0 HEAD^ HEAD -- docs/Plan.md)
+          
+          # Use 'jq' to safely construct the JSON payload
+          jq -n \
+            --arg diff "$RAW_DIFF" \
+            '{
+              "personalizations": [
+                {
+                  "to": [
+                    {
+                      "email": "duttbobba@gmail.com"
+                    },
+                    {
+                      "email": "duttbobba2@gmail.com"
+                    }                  
+                  ],
+                  "subject": "Changes in project progress"
+                }
+              ],
+              "from": {
+                "email": "duttbobba1@gmail.com"
+              },
+              "content": [
+                {
+                  "type": "text/plain",
+                  "value": ("I see some progress at https://github.com/duttly/ai-ml-deepdive/blob/main/docs/Plan.md\nHere is exactly what changed:\n\n" + $diff)
+                }
+              ]
+            }' > payload.json
+            
+          # Send the securely formatted JSON payload to SendGrid
           curl -X POST https://api.sendgrid.com/v3/mail/send \
-          -H "Authorization: Bearer $SENDGRID_API_KEY" \
-          -H "Content-Type: application/json" \
-          -d '{
-            "personalizations": [
-              {
-                "to": [
-                  {
-                    "email": "duttbobba1@gmail.com"
-                  }
-                ],
-                "subject": "GitHub Alert: A file was updated!"
-              }
-            ],
-            "from": {
-              "email": "duttbobba@gmail.com"
-            },
-            "content": [
-              {
-                "type": "text/plain",
-                "value": "Hey! Just an automated heads-up that docs/Plan.md was updated in the repository."
-              }
-            ]
-          }'
+            -H "Authorization: Bearer $SENDGRID_API_KEY" \
+            -H "Content-Type: application/json" \
+            -d @payload.json

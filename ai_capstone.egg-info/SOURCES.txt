@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+ai_capstone.egg-info/PKG-INFO
+ai_capstone.egg-info/SOURCES.txt
+ai_capstone.egg-info/dependency_links.txt
+ai_capstone.egg-info/requires.txt
+ai_capstone.egg-info/top_level.txt
