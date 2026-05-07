@@ -6,7 +6,8 @@ on:
     branches:
       - main 
     paths:
-      - 'docs/' # EXACT path to the file
+      - 'docs/Plan.md' # EXACT path to the file
+      - 'docs/MyNotes.md'
 
 jobs:
   send_email:
