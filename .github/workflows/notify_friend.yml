@@ -1,0 +1,42 @@
+name: Notify Friend on File Change
+
+# 1. The Trigger (Filters strictly for your file)
+on:
+  push:
+    branches:
+      - main 
+    paths:
+      - 'docs/Plan.md' # EXACT path to the file
+
+jobs:
+  send_email:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Email via SendGrid API
+        env:
+          SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
+        run: |
+          curl -X POST https://api.sendgrid.com/v3/mail/send \
+          -H "Authorization: Bearer $SENDGRID_API_KEY" \
+          -H "Content-Type: application/json" \
+          -d '{
+            "personalizations": [
+              {
+                "to": [
+                  {
+                    "email": "duttbobba1@gmail.com"
+                  }
+                ],
+                "subject": "GitHub Alert: A file was updated!"
+              }
+            ],
+            "from": {
+              "email": "duttbobba@gmail.com"
+            },
+            "content": [
+              {
+                "type": "text/plain",
+                "value": "Hey! Just an automated heads-up that docs/Plan.md was updated in the repository."
+              }
+            ]
+          }'
