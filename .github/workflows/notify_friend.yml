@@ -6,7 +6,7 @@ on:
     branches:
       - main 
     paths:
-      - 'docs/Plan.md' # EXACT path to the file
+      - 'docs/' # EXACT path to the file
 
 jobs:
   send_email:
@@ -24,7 +24,7 @@ jobs:
           SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
         run: |
           # Grab the diff for this specific file
-          RAW_DIFF=$(git diff -U0 HEAD^ HEAD -- docs/Plan.md)
+          RAW_DIFF=$(git diff -U0 HEAD^ HEAD -- docs)
           
           # Use 'jq' to safely construct the JSON payload
           jq -n \
@@ -55,7 +55,7 @@ jobs:
               "content": [
                 {
                   "type": "text/plain",
-                  "value": ("I see some progress at https://github.com/duttly/ai-ml-deepdive/blob/main/docs/Plan.md\nHere is exactly what changed:\n\n" + $diff)
+                  "value": ("I see some progress at https://github.com/duttly/ai-ml-deepdive/blob/main/docs/\nHere is exactly what changed:\n\n" + $diff)
                 }
               ]
             }' > payload.json
