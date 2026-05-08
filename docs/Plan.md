@@ -6,7 +6,7 @@ This turns the syllabus into a highly actionable tracking document. You can easi
 |  | **Phase 1: The Deep Roots** |
 | [x] | **Day 1:** Learn Scalar Autograd (Understand `Value` & backprop) | [Micrograd Video](https://www.youtube.com/watch?v=VMj-3S1tku0) | 6 | Hard | Foundations / Math |
 | [x] | **Day 2:** The Chain Rule in Code (Implement `_backward()`) | [Micrograd Source](https://github.com/karpathy/micrograd/blob/master/micrograd/engine.py) | 6 | Hard | Foundations / Math |
-| [ ] | **Day 3:** Building an MLP (Neuron to Multi-Layer Perceptron) | [Micrograd Source: nn.py](https://github.com/karpathy/micrograd/blob/master/micrograd/nn.py) | 8 | Hard | Architecture |
+| [x] | **Day 3:** Building an MLP (Neuron to Multi-Layer Perceptron) | [Micrograd Source: nn.py](https://github.com/karpathy/micrograd/blob/master/micrograd/nn.py) | 8 | Hard | Architecture |
 | [ ] | **Day 4:** Self-Attention Mechanics (Matrix math of Q, K, V) | [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/) | 6 | Very Hard | Architecture |
 | [ ] | **Day 5:** Building a Transformer Block (Multi-Head & FF) | [Let's build GPT from scratch](https://www.youtube.com/watch?v=kCc8FmEb1nY) | 8 | Very Hard | Architecture |
 | [ ] | **Day 6:** Training on Shakespeare (Run loop & observe loss) | N/A | 4 | Medium | Training / Optimization |
