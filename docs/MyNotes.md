@@ -5,12 +5,88 @@
 **Day 1:** Learn Scalar Autograd (Understand `Value` & backprop) | [Micrograd Video](https://www.youtube.com/watch?v=VMj-3S1tku0)
 - Qn1
 - Qn2
-
+---
 **Day 2:** The Chain Rule in Code (Implement `_backward()`) | [Micrograd Source](https://github.com/karpathy/micrograd/blob/master/micrograd/engine.py)
 - Qn3
 - Qn4
+---
+ **Day 3:** Building an MLP (Neuron to Multi-Layer Perceptron)
+- How do I determine the topology of an MLP ?
+- How many layers ? How many neurons per layer ?
+- Can I connect only a subset between layer1 and layer2 ?
+- Can I directly connect from layer1 to layer3 ?
 
- **Day 3:** Building an MLP (Neuron to Multi-Layer Perceptron) 
+- nn.py only talks about 1 fwd and 1 bwd pass. The exact loss minimization is in demo.ipynb
+---
+### **Nice Example:**
+
+#### **Initial State:**
+*   Inputs: $x_1 = 2.0$, $x_2 = 0.5$
+*   Target: $10.0$
+*   Learning Rate ($\alpha$): $0.05$
+*   Starting Weights: $w_1 = 0.5$, $w_2 = 0.5$, $b = 0.0$
+---
+#### **Iteration 1**
+**1. Forward Pass (Prediction)**
+$P = (x_1 \cdot w_1) + (x_2 \cdot w_2) + b$
+$P = (2.0 \cdot 0.5) + (0.5 \cdot 0.5) + 0.0$
+$P = 1.0 + 0.25 + 0.0 = 1.25$
+
+**2. Error & Loss**
+$E = P - Target = 1.25 - 10.0 = -8.75$
+$Loss = E^2 = (-8.75)^2 = 76.5625$
+
+**3. Gradients (Backward Pass)**
+*   $grad\_w_1 = 2 \cdot E \cdot x_1 = 2 \cdot (-8.75) \cdot 2.0 = -35.0$
+*   $grad\_w_2 = 2 \cdot E \cdot x_2 = 2 \cdot (-8.75) \cdot 0.5 = -8.75$
+*   $grad\_b = 2 \cdot E \cdot 1 = 2 \cdot (-8.75) = -17.5$
+
+**4. Weight Update (Gradient Descent)**
+*   $w_1 = w_1 - (\alpha \cdot grad\_w_1) = 0.5 - (0.05 \cdot -35.0) = 0.5 + 1.75 = \mathbf{2.25}$
+*   $w_2 = w_2 - (\alpha \cdot grad\_w_2) = 0.5 - (0.05 \cdot -8.75) = 0.5 + 0.4375 = \mathbf{0.9375}$
+*   $b = b - (\alpha \cdot grad\_b) = 0.0 - (0.05 \cdot -17.5) = 0.0 + 0.875 = \mathbf{0.875}$
+---
+#### **Iteration 2**
+*We take the new weights from Iteration 1 and start over.*
+
+**1. Forward Pass**
+$P = (2.0 \cdot 2.25) + (0.5 \cdot 0.9375) + 0.875$
+$P = 4.5 + 0.46875 + 0.875 = 5.84375$
+
+**2. Error & Loss**
+$E = 5.84375 - 10.0 = -4.15625$
+$Loss = (-4.15625)^2 = 17.2744$
+
+**3. Gradients**
+*   $grad\_w_1 = 2 \cdot (-4.15625) \cdot 2.0 = -16.625$
+*   $grad\_w_2 = 2 \cdot (-4.15625) \cdot 0.5 = -4.15625$
+*   $grad\_b = 2 \cdot (-4.15625) = -8.3125$
+
+**4. Weight Update**
+*   $w_1 = 2.25 - (0.05 \cdot -16.625) = 2.25 + 0.83125 = \mathbf{3.08125}$
+*   $w_2 = 0.9375 - (0.05 \cdot -4.15625) = 0.9375 + 0.2078125 = \mathbf{1.1453125}$
+*   $b = 0.875 - (0.05 \cdot -8.3125) = 0.875 + 0.415625 = \mathbf{1.290625}$
+---
+#### **Iteration 3**
+
+**1. Forward Pass**
+$P = (2.0 \cdot 3.08125) + (0.5 \cdot 1.1453125) + 1.290625$
+$P = 6.1625 + 0.57265625 + 1.290625 = 8.02578125$
+
+**2. Error & Loss**
+$E = 8.02578125 - 10.0 = -1.97421875$
+$Loss = (-1.97421875)^2 \approx 3.8975$
+
+**3. Gradients**
+*   $grad\_w_1 = 2 \cdot (-1.97421875) \cdot 2.0 = -7.896875$
+*   $grad\_w_2 = 2 \cdot (-1.97421875) \cdot 0.5 = -1.97421875$
+*   $grad\_b = 2 \cdot (-1.97421875) = -3.9484375$
+
+**4. Weight Update**
+*   $w_1 = 3.08125 - (0.05 \cdot -7.896875) = 3.08125 + 0.39484375 = \mathbf{3.47609375}$
+*   $w_2 = 1.1453125 - (0.05 \cdot -1.97421875) = 1.1453125 + 0.0987109375 = \mathbf{1.2440234375}$
+*   $b = 1.290625 - (0.05 \cdot -3.9484375) = 1.290625 + 0.197421875 = \mathbf{1.488046875}$
+---
  **Day 4:** Self-Attention Mechanics (Matrix math of Q, K, V) 
  **Day 5:** Building a Transformer Block (Multi-Head & FF) 
  **Day 6:** Training on Shakespeare (Run loop & observe loss) 
