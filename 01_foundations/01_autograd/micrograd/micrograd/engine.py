@@ -55,7 +55,6 @@ class Value:
 
     def tanh(self):
         x = self.data
-        z = math.pow
         y = (math.pow(math.e,2*x)-1)/(math.pow(math.e,2*x)+1)
         out = Value(y, (self,), 'tanh')
 
@@ -79,6 +78,7 @@ class Value:
         build_topo(self)
 
         # go one variable at a time and apply the chain rule to get its gradient
+        print(topo)
         self.grad = 1
         for v in reversed(topo):
             v._backward()
