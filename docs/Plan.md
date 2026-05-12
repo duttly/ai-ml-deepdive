@@ -7,10 +7,10 @@ This turns the syllabus into a highly actionable tracking document. You can easi
 | 05-05-2026 | 05-05-2026 | **Day 1:** Learn Scalar Autograd (Understand `Value` & backprop) | [Micrograd Video](https://www.youtube.com/watch?v=VMj-3S1tku0) | 6 | Hard | Foundations / Math |
 | 05-06-2026 | 05-05-2026 | **Day 2:** The Chain Rule in Code (Implement `_backward()`) | [Micrograd Source](https://github.com/karpathy/micrograd/blob/master/micrograd/engine.py) | 6 | Hard | Foundations / Math |
 | 05-07-2026 | 05-06-2026 | **Day 3:** Building an MLP (Neuron to Multi-Layer Perceptron) | [Micrograd Source: nn.py](https://github.com/karpathy/micrograd/blob/master/micrograd/nn.py) | 8 | Hard | Architecture |
-| 05-08-2026 |  | **Day 4:** Self-Attention Mechanics (Matrix math of Q, K, V) | [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/) | 6 | Very Hard | Architecture |
-| 05-09-2026 |  | **Day 5:** Building a Transformer Block (Multi-Head & FF) | [Let's build GPT from scratch](https://www.youtube.com/watch?v=kCc8FmEb1nY) | 8 | Very Hard | Architecture |
+| 05-08-2026 | 05-08-2026 | **Day 4:** Self-Attention Mechanics (Matrix math of Q, K, V) | [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/) | 6 | Very Hard | Architecture |
+| 05-09-2026 | 05-10-2026 | **Day 5:** Building a Transformer Block (Multi-Head & FF) | [Let's build GPT from scratch](https://www.youtube.com/watch?v=kCc8FmEb1nY) | 8 | Very Hard | Architecture |
 | 05-10-2026 |  | **Day 6:** Training on Shakespeare (Run loop & observe loss) | N/A | 4 | Medium | Training / Optimization |
-| 05-11-2026 |  | **Day 7:** Tokenization (Understand BPE & vocabulary) | [Let's build the GPT Tokenizer](https://www.youtube.com/watch?v=zduBIWJZ9Co) | 5 | Medium | Data Processing |
+| 05-11-2026 |  | **Day 7:** Tokenization (Understand BPE & vocabulary) | [Let's build the GPT Tokenizer](https://www.youtube.com/watch?v=zduSFxRajkE) | 5 | Medium | Data Processing |
 | 05-12-2026 |  | **Day 8:** Local SLMs (Setting up Llama 3 locally) | [Ollama](https://ollama.com/) | 3 | Easy | Infrastructure |
 | 05-13-2026 |  | **Day 9:** Quantization Theory (VRAM calc, 4-bit vs 8-bit) | [HF Quantization Guide](https://huggingface.co/docs/optimum/concept_guides/quantization) | 4 | Medium | Optimization |
 | 05-14-2026 |  | **Day 10:** High-Throughput Serving (Deploy model) | [vLLM Docs](https://docs.vllm.ai/) | 6 | Medium | Infrastructure |

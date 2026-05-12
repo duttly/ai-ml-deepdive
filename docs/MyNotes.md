@@ -130,6 +130,8 @@
 > 3.  **Hidden Layer 1:** Each node updates $w_1$ through $w_8$ and $b_1$ through $b_4$. The gradient stops here, as we do not update our input data ($x_1, x_2$).
 ---
  **Day 4:** Self-Attention Mechanics (Matrix math of Q, K, V)
+ - Finished the course at https://www.deeplearning.ai/short-courses/how-transformer-llms-work
+ - The Q, K, V is complex. Truly understanding it is taking time. Need to revisit again.
 
  **Day 5:** Building a Transformer Block (Multi-Head & FF) 
 
