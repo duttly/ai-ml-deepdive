@@ -9,15 +9,15 @@ This turns the syllabus into a highly actionable tracking document. You can easi
 | 05-07-2026 | 05-06-2026 | **Day 3:** Building an MLP (Neuron to Multi-Layer Perceptron) | [Micrograd Source: nn.py](https://github.com/karpathy/micrograd/blob/master/micrograd/nn.py) | 8 | Hard | Architecture |
 | 05-08-2026 | 05-08-2026 | **Day 4:** Self-Attention Mechanics (Matrix math of Q, K, V) | [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/) | 6 | Very Hard | Architecture |
 | 05-09-2026 | 05-10-2026 | **Day 5:** Building a Transformer Block (Multi-Head & FF) | [Let's build GPT from scratch](https://www.youtube.com/watch?v=kCc8FmEb1nY) | 8 | Very Hard | Architecture |
-| 05-10-2026 |  | **Day 6:** Training on Shakespeare (Run loop & observe loss) | N/A | 4 | Medium | Training / Optimization |
-| 05-11-2026 |  | **Day 7:** Tokenization (Understand BPE & vocabulary) | [Let's build the GPT Tokenizer](https://www.youtube.com/watch?v=zduSFxRajkE) | 5 | Medium | Data Processing |
-| 05-12-2026 |  | **Day 8:** Local SLMs (Setting up Llama 3 locally) | [Ollama](https://ollama.com/) | 3 | Easy | Infrastructure |
-| 05-13-2026 |  | **Day 9:** Quantization Theory (VRAM calc, 4-bit vs 8-bit) | [HF Quantization Guide](https://huggingface.co/docs/optimum/concept_guides/quantization) | 4 | Medium | Optimization |
-| 05-14-2026 |  | **Day 10:** High-Throughput Serving (Deploy model) | [vLLM Docs](https://docs.vllm.ai/) | 6 | Medium | Infrastructure |
-| 05-15-2026 |  | **Day 11:** Vector Math in Numpy (Cosine Sim / Dot Product) | N/A | 5 | Medium | Foundations / Math |
-| 05-16-2026 |  | **Day 12:** Vector Databases (Install & index via Docker) | [Qdrant](https://qdrant.tech/) | 6 | Medium | Data Systems |
-| 05-17-2026 |  | **Day 13:** Chunking Strategies (Fixed vs. Recursive vs. Semantic) | [LangChain Text Splitters](https://python.langchain.com/docs/modules/data_connection/document_transformers/) | 4 | Easy | Data Engineering |
-| 05-18-2026 |  | **Day 14:** Metadata Filtering (HNSW indexing with payloads) | N/A | 5 | Medium | Data Systems |
+| 05-10-2026 | 05-23-2026 | **Day 6:** Training on Shakespeare (Run loop & observe loss) | N/A | 4 | Medium | Training / Optimization |
+| 05-11-2026 | 05-25-2026 | **Day 7:** Tokenization (Understand BPE & vocabulary) | [Let's build the GPT Tokenizer](https://www.youtube.com/watch?v=zduSFxRajkE) | 5 | Medium | Data Processing |
+| 05-12-2026 | 05-26-2026 | **Day 8:** Local SLMs (Setting up Llama 3 locally) | [Ollama](https://ollama.com/) | 3 | Easy | Infrastructure |
+| 05-13-2026 | 05-26-2026 | **Day 9:** Quantization Theory (VRAM calc, 4-bit vs 8-bit) | [HF Quantization Guide](https://huggingface.co/docs/optimum/concept_guides/quantization) | 4 | Medium | Optimization |
+| 05-14-2026 | 05-26-2026 | **Day 10:** High-Throughput Serving (Deploy model) | [vLLM Docs](https://docs.vllm.ai/) | 6 | Medium | Infrastructure |
+| 05-15-2026 | 05-27-2026 | **Day 11:** Vector Math in Numpy (Cosine Sim / Dot Product) | N/A | 5 | Medium | Foundations / Math |
+| 05-16-2026 | 05-27-2026 | **Day 12:** Vector Databases (Install & index via Docker) | [Qdrant](https://qdrant.tech/) | 6 | Medium | Data Systems |
+| 05-17-2026 | 05-28-2026 | **Day 13:** Chunking Strategies (Fixed vs. Recursive vs. Semantic) | [LangChain Text Splitters](https://python.langchain.com/docs/modules/data_connection/document_transformers/) | 4 | Easy | Data Engineering |
+| 05-18-2026 | 05-28-2026 | **Day 14:** Metadata Filtering (HNSW indexing with payloads) | N/A | 5 | Medium | Data Systems |
 |  |  | **Phase 2: Building & Systems** |  |  |  |  |
 | 05-19-2026 |  | **Day 15:** BM25 vs. Vector (Keyword vs. Semantic search) | [Practical BM25](https://www.elastic.co/blog/practical-bm25-part-2-the-bm25-algorithm-and-its-variables) | 4 | Medium | Information Retrieval |
 | 05-20-2026 |  | **Day 16:** Hybrid Search & RRF (Reciprocal Rank Fusion) | N/A | 6 | Hard | Information Retrieval |

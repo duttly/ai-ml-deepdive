@@ -22,3 +22,5 @@ env/
 *.log
 *.sqlite3
 /docker_data/
+
+.DS_Store

@@ -1,0 +1,20 @@
+llama3 (7B)
+========================================
+Total Tokens Generated: 842
+Total Time: 45.79 seconds
+Hardware Throughput: 18.39 Tokens Per Second (TPS)
+========================================
+
+llama3.2:1b (1B)
+========================================
+Total Tokens Generated: 831
+Total Time: 13.12 seconds
+Hardware Throughput: 63.33 Tokens Per Second (TPS)
+========================================
+
+llama3.2:latest (?B)
+========================================
+Total Tokens Generated: 727
+Total Time: 18.23 seconds
+Hardware Throughput: 39.88 Tokens Per Second (TPS)
+========================================
