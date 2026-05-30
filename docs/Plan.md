@@ -16,7 +16,7 @@ This turns the syllabus into a highly actionable tracking document. You can easi
 | 05-14-2026 | 05-26-2026 | **Day 10:** High-Throughput Serving (Deploy model) | [vLLM Docs](https://docs.vllm.ai/) | 6 | Medium | Infrastructure |
 | 05-15-2026 | 05-27-2026 | **Day 11:** Vector Math in Numpy (Cosine Sim / Dot Product) | N/A | 5 | Medium | Foundations / Math |
 | 05-16-2026 | 05-27-2026 | **Day 12:** Vector Databases (Install & index via Docker) | [Qdrant](https://qdrant.tech/) | 6 | Medium | Data Systems |
-| 05-17-2026 | 05-28-2026 | **Day 13:** Chunking Strategies (Fixed vs. Recursive vs. Semantic) | [LangChain Text Splitters](https://python.langchain.com/docs/modules/data_connection/document_transformers/) | 4 | Easy | Data Engineering |
+| 05-17-2026 | 05-28-2026 | **Day 13:** Chunking Strategies (Fixed vs. Recursive vs. Semantic) | [LangChain Text Splitters](https://www.youtube.com/watch?v=8OJC21T2SL4) | 4 | Easy | Data Engineering |
 | 05-18-2026 | 05-28-2026 | **Day 14:** Metadata Filtering (HNSW indexing with payloads) | N/A | 5 | Medium | Data Systems |
 |  |  | **Phase 2: Building & Systems** |  |  |  |  |
 | 05-19-2026 |  | **Day 15:** BM25 vs. Vector (Keyword vs. Semantic search) | [Practical BM25](https://www.elastic.co/blog/practical-bm25-part-2-the-bm25-algorithm-and-its-variables) | 4 | Medium | Information Retrieval |
